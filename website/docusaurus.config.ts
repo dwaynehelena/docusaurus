@@ -156,7 +156,7 @@ function getLocalizedConfigValue(key: keyof typeof ConfigLocalized) {
 export default async function createConfigAsync() {
   return {
     title: 'Docusaurus',
-    tagline: getLocalizedConfigValue('tagline'),
+    tagline: getLocalizedConfigValue('tagline') + ' | AI engineering and DevSecOps',
     organizationName: 'facebook',
     projectName: 'docusaurus',
     baseUrl,
@@ -251,6 +251,9 @@ export default async function createConfigAsync() {
       description:
         'An optimized site generator in React. Docusaurus helps you to move fast and write content. Build documentation websites, blogs, marketing pages, and more.',
       announcedVersion,
+      aiEngineering: true,
+      devSecOps: true,
+      DORA: true,
     },
     staticDirectories: [
       'static',
@@ -642,6 +645,11 @@ export default async function createConfigAsync() {
             label: 'Community',
             position: 'left',
             activeBaseRegex: `/community/`,
+          },
+          {
+            to: '/dora',
+            label: 'DORA',
+            position: 'left',
           },
           // This item links to a draft doc: only displayed in dev
           {
