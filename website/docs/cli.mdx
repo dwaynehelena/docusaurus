@@ -188,3 +188,39 @@ Add [explicit heading IDs](./guides/markdown-features/markdown-features-toc.mdx#
 | `files` | All MD files used by plugins | The files that you want heading IDs to be written to. |
 | `--maintain-case` | `false` | Keep the headings' casing, otherwise make all lowercase. |
 | `--overwrite` | `false` | Overwrite existing heading IDs. |
+
+### `docusaurus ai-engineering [siteDir]` {#docusaurus-ai-engineering-sitedir}
+
+Generates and serves AI engineering content for your site.
+
+#### Options {#options-ai-engineering}
+
+| Name | Default | Description |
+| --- | --- | --- |
+| `--port` | `3001` | Specifies the port of the AI engineering server. |
+| `--host` | `localhost` | Specify a host to use. For example, if you want your server to be accessible externally, you can use `--host 0.0.0.0`. |
+| `--config` | `undefined` | Path to Docusaurus config file, default to `[siteDir]/docusaurus.config.js` |
+
+### `docusaurus devsecops [siteDir]` {#docusaurus-devsecops-sitedir}
+
+Generates and serves DevSecOps content for your site.
+
+#### Options {#options-devsecops}
+
+| Name | Default | Description |
+| --- | --- | --- |
+| `--port` | `3002` | Specifies the port of the DevSecOps server. |
+| `--host` | `localhost` | Specify a host to use. For example, if you want your server to be accessible externally, you can use `--host 0.0.0.0`. |
+| `--config` | `undefined` | Path to Docusaurus config file, default to `[siteDir]/docusaurus.config.js` |
+
+### `docusaurus dora [siteDir]` {#docusaurus-dora-sitedir}
+
+Generates and serves DORA content for your site.
+
+#### Options {#options-dora}
+
+| Name | Default | Description |
+| --- | --- | --- |
+| `--port` | `3003` | Specifies the port of the DORA server. |
+| `--host` | `localhost` | Specify a host to use. For example, if you want your server to be accessible externally, you can use `--host 0.0.0.0`. |
+| `--config` | `undefined` | Path to Docusaurus config file, default to `[siteDir]/docusaurus.config.js` |
