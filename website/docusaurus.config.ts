@@ -156,7 +156,9 @@ function getLocalizedConfigValue(key: keyof typeof ConfigLocalized) {
 export default async function createConfigAsync() {
   return {
     title: 'Docusaurus',
-    tagline: getLocalizedConfigValue('tagline') + ' | AI engineering and DevSecOps',
+    tagline: `${getLocalizedConfigValue(
+      'tagline',
+    )} | AI engineering and DevSecOps`,
     organizationName: 'facebook',
     projectName: 'docusaurus',
     baseUrl,
